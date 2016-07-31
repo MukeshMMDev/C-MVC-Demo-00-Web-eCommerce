@@ -2,16 +2,15 @@
 using eCommerce.Model;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace eCommerce.DAL.Repositories
 {
-    public class ProductRepositories : RepositoryBase<Product>
+    public class CustomerRepository : RepositoryBase<Customer>
     {
-        public ProductRepositories(DataContext context) :base (context) {
+        public CustomerRepository(DataContext context) :base (context) {
             if (context == null)
                 throw new ArgumentNullException();
         }
