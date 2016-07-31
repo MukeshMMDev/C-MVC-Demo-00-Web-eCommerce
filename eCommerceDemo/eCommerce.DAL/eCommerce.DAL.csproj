@@ -73,6 +73,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\eCommerce.Contracts\eCommerce.Contracts.csproj">
+      <Project>{efc5943d-1185-475b-8368-4a4a6677375a}</Project>
+      <Name>eCommerce.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eCommerce.Model\eCommerce.Model.csproj">
       <Project>{edb87a07-d4e6-4b65-8393-9df4d13441cd}</Project>
       <Name>eCommerce.Model</Name>
