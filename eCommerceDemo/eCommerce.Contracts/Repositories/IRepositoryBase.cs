@@ -7,7 +7,7 @@ namespace eCommerce.Contracts.Repositories
         void Commit();
         void Delete(object id);
         void Dispose();
-        IQueryable<TEntity> GetAll(object id);
+        IQueryable<TEntity> GetAll();
         TEntity GetById(object id);
         void Insert(TEntity entity);
         void Update(TEntity entity);

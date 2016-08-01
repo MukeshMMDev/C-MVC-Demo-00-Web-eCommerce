@@ -24,7 +24,7 @@ namespace eCommerce.DAL.Repositories
         {
             return dbSet.Find(id);
         }
-        public virtual IQueryable<TEntity> GetAll(object id)
+        public virtual IQueryable<TEntity> GetAll()
         {
             return dbSet;
         }
