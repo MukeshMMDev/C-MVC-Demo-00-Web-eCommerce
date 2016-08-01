@@ -41,6 +41,7 @@ namespace eCommerce.WebUI.App_Start
             // TODO: Register your types here
             container.RegisterType<IRepositoryBase < Customer >, CustomerRepository>();
             container.RegisterType<IRepositoryBase<Product>, ProductRepositories>();
+            container.RegisterType<IRepositoryBase<Basket>, BasketRepository>();
         }
     }
 }

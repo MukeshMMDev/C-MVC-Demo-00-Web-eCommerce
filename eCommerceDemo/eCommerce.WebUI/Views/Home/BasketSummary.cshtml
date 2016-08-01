@@ -1,0 +1,26 @@
+﻿@model eCommerce.Model.Basket
+
+@{
+    ViewBag.Title = "BasketSummary";
+}
+
+<h2>BasketSummary</h2>
+
+<div>
+    <h4>Basket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BasketID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
