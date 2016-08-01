@@ -8,7 +8,7 @@ namespace eCommerce.Model
 {
     public class Basket
     {
-        public int BasketID { get; set; }
+        public Guid BasketID { get; set; }
         public DateTime date { get; set; }
 
         public virtual ICollection<BasketItem> BasketItems { get; set; }
